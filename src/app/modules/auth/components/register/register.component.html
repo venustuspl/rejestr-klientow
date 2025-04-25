@@ -26,9 +26,17 @@
         </button>
       </mat-form-field>
     </div>
+    <!--    <ng-container formArrayName="hobbies">-->
+    <!--      <div *ngFor="let hobby of hobbies.controls; index as i">-->
+    <!--        <input [formControlName]="i" type="text">-->
+    <!--        <button (click)="removeControl(i)" class="btn btn-sm btn-danger">X</button>-->
+    <!--      </div>-->
+    <!--    </ng-container>-->
+    <!--    <button (click)="addControl()" type="button">Dodaj kontrolkę</button>-->
     <div class="d-flex justify-content-end">
       <button [disabled]="registerForm.invalid" color="primary" mat-raised-button type="submit">Zarejestruj się</button>
     </div>
     <!--    <app-alert *ngIf="errorMessage" [text]="errorMessage"></app-alert>-->
   </form>
+  <app-alert *ngIf="errorMessage" [text]="errorMessage"></app-alert>
 </div>
