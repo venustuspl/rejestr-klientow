@@ -3,6 +3,7 @@ import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from '../../../core/services/auth.service';
 import { PostUser } from '../../../core/models/user.model';
 import { Router } from '@angular/router';
+import { FormsService } from '../../../core/services/forms.service';
 
 @Component({
   selector: 'app-register',
@@ -32,7 +33,11 @@ export class RegisterComponent implements OnInit {
   // hobbies: new FormArray([new FormControl('')]),
   errorMessage = '';
 
-  constructor(private authService: AuthService, private router: Router) {}
+  constructor(
+    private authService: AuthService,
+    private router: Router,
+    private formsService: FormsService
+  ) {}
 
   get controls() {
     return this.registerForm.controls;
@@ -63,19 +68,7 @@ export class RegisterComponent implements OnInit {
   }
 
   getErrorMessage(control: FormControl) {
-    if (control.hasError('required')) {
-      return 'Musisz wpisać jakąś wartość.';
-    }
-
-    if (control.hasError('minlength')) {
-      return 'Przekazałeś za mało znaków w kontrolce.';
-    }
-
-    if (control.hasError('maxlength')) {
-      return 'Przekazałeś za dużo znaków w kontrolce.';
-    }
-
-    return control.hasError('email') ? 'Nieprawidłowy adres e-mail' : '';
+    return this.formsService.getErrorMessage(control);
   }
 
   onRegister() {

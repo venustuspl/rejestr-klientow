@@ -30,15 +30,6 @@
       "postcode": "111-11"
     },
     {
-      "id": 2,
-      "firstname": "Test2",
-      "surname": "Testowy3",
-      "email": "test2@gmail.com",
-      "phone": "123456789",
-      "address": "Miasto ul. Testowa 12",
-      "postcode": "111-11"
-    },
-    {
       "id": 3,
       "firstname": "Test3",
       "surname": "Testowy2",
@@ -46,6 +37,15 @@
       "phone": "123456789",
       "address": "Miasto ul. Testowa 12",
       "postcode": "111-11"
+    },
+    {
+      "firstname": "Andrzej",
+      "surname": "Surn",
+      "email": "a@gmail.com",
+      "phone": "123456789",
+      "address": "Warszawa ul. Nijaka",
+      "postcode": "11-111",
+      "id": 4
     }
   ]
 }
