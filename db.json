@@ -46,6 +46,15 @@
       "address": "Warszawa ul. Nijaka",
       "postcode": "11-111",
       "id": 4
+    },
+    {
+      "firstname": "Grzegorz",
+      "surname": "Greg",
+      "email": "g@gmail.com",
+      "phone": "123456789",
+      "address": "Warszawa ul. testowa",
+      "postcode": "11-111",
+      "id": 5
     }
   ]
 }

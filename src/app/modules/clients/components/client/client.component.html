@@ -4,6 +4,11 @@
     <button (click)="openDialog()" color="warn" mat-raised-button>Usuń</button>
   </div>
 
+  <div>
+    <p>Edytuj klienta:</p>
+    <button (click)="openEditDialog()" color="primary" mat-raised-button>Edytuj</button>
+  </div>
+
   <p>Dane klienta:</p>
   <p>{{client.firstname}} {{client.surname}}</p>
   <p>Adres e-mail: {{client.email}}</p>
