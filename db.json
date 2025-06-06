@@ -55,6 +55,15 @@
       "address": "Warszawa ul. testowa",
       "postcode": "11-111",
       "id": 5
+    },
+    {
+      "firstname": "Agnieszka",
+      "surname": "Nowak",
+      "email": "an@gmail.com",
+      "phone": "+48123456789",
+      "address": "Warszawa ul. testowa",
+      "postcode": "11-111",
+      "id": 6
     }
   ]
 }
