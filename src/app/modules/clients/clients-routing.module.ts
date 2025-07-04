@@ -10,6 +10,7 @@ const routes: Routes = [
     path: '',
     component: ClientsComponent,
     // canActivate: [authGuardActivate],
+    // resolve: { client: ClientResolver },
   },
   {
     path: 'dodaj',
