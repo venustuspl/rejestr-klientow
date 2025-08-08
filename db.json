@@ -1,60 +1,19 @@
 {
-  "users": [
+  "todo": [
     {
       "id": 1,
-      "email": "json-server",
-      "password": "123",
-      "username": "test"
+      "name": "Zadanie testowe",
+      "isComplete": false
     },
     {
-      "email": "test@gmail.com",
-      "username": "Testowy",
-      "password": "123",
+      "name": "Test 1",
+      "isComplete": false,
       "id": 2
     },
     {
-      "email": "a@gmail.com",
-      "username": "Andrew",
-      "password": "123",
+      "name": "Test 2",
+      "isComplete": false,
       "id": 3
-    }
-  ],
-  "clients": [
-    {
-      "id": 1,
-      "firstname": "Test",
-      "surname": "Testowy",
-      "email": "test@gmail.com",
-      "phone": "123456789",
-      "address": "Miasto ul. Testowa 12",
-      "postcode": "111-11"
-    },
-    {
-      "firstname": "Andrzej",
-      "surname": "Surn",
-      "email": "a@gmail.com",
-      "phone": "123456789",
-      "address": "Warszawa ul. Nijaka",
-      "postcode": "11-111",
-      "id": 4
-    },
-    {
-      "firstname": "Grzegorz",
-      "surname": "Greg",
-      "email": "g@gmail.com",
-      "phone": "123456789",
-      "address": "Warszawa ul. testowa",
-      "postcode": "11-111",
-      "id": 5
-    },
-    {
-      "firstname": "Agnieszka",
-      "surname": "Nowak",
-      "email": "ano@gmail.com",
-      "phone": "+48123456789",
-      "address": "Warszawa ul. testowa",
-      "postcode": "11-111",
-      "id": 6
     }
   ]
 }
