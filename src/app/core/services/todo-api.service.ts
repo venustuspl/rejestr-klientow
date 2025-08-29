@@ -27,9 +27,10 @@ export class TodoApiService {
       headers,
       // responseType:
       // params
-    }).pipe(
-      tap((todos) => this.store.dispatch(TodosActions.fetchTodosSuccess({todos})))
-    );
+    })
+    //   .pipe(
+    //   tap((todos) => this.store.dispatch(TodosActions.fetchTodosSuccess({todos})))
+    // );
   }
 
   getTodo(id: number): Observable<Todo> {

@@ -24,6 +24,7 @@ import {HttpClientModule} from "@angular/common/http";
 import { StoreModule } from '@ngrx/store';
 import {todoListReducer} from "./todo-list/store/todo-list.reducer";
 import { EffectsModule } from '@ngrx/effects';
+import {TodoListEffects} from "./todo-list/store/todo-list.effects";
 
 registerLocaleData(localePl);
 
@@ -51,7 +52,7 @@ registerLocaleData(localePl);
     HttpClientModule,
     StoreModule.forRoot({ todos: todoListReducer}),
     AppRoutingModule,
-    EffectsModule.forRoot([]),
+    EffectsModule.forRoot([TodoListEffects]),
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'pl'}

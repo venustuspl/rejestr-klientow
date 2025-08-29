@@ -1,10 +1,10 @@
 import {createAction, props} from "@ngrx/store";
 import {Todo} from "../../shared/interfaces/todo.interface";
 
-export const addTodo = createAction(
-  '[Todo List] Add Todo',
-  props<{todo: Todo}>()
-);
+// export const addTodo = createAction(
+//   '[Todo List] Add Todo',
+//   props<{todo: Todo}>()
+// );
 
 export const deleteTodo = createAction(
   '[Todo List] Delete Todo',
@@ -27,5 +27,20 @@ export const fetchTodosSuccess = createAction(
 
 export const fetchTodosFailed = createAction(
   '[Todo List] Fetch Todos Failed',
+  props<{errorMessage: string}>()
+)
+
+export const addTodo = createAction(
+  '[Todo List] Add Todo',
+  props<{todo: Omit<Todo, "id">}>
+)
+
+export const addTodoSuccess = createAction(
+  '[Todo List] Add Todo Success',
+  props<{todo: Todo}>()
+)
+
+export const addTodoFailed = createAction(
+  '[Todo List] Add Todo Failed',
   props<{errorMessage: string}>()
 )
