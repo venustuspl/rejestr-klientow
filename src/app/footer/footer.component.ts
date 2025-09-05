@@ -1,14 +1,13 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-footer',
-  template: `
-    <p class="text-center">
-      &copy; Prawa zastrzeżone
-    </p>
-  `,
-  styleUrls: ['./footer.component.css']
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: './footer.component.html',
+  styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
-
+  @Input({required: true}) title!: string;
 }
